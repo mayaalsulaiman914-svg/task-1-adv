@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout">
+     <aside id="sidebar">
+     <button class="close-button" id="closeButton"><i class="fa-solid fa-xmark"></i></button>
+      <div class="top-side">
+       <i class="fa-solid fa-book-open"></i>
+        <div class="text-side">
+        <h2>Library</h2>
+        <p>Managemnt system</p>
+         </div>
+        </div>
+        <div class="bottom-side">
+            <div class="books"><i class="fa-solid fa-box"></i> <a href="/"> Books</a></div>
+            <div class="add"><i class="fa-solid fa-plus"></i> <button id="addButton">Add Book</button></div>
+            <div class="setting"><i class="fa-solid fa-gear"></i>   <a href="">Settings</a></div>
+          <div class="logout"><i class="fa-solid fa-right-from-bracket"></i>  <a href="">Logout</a></div>
+           
+        </div>
+    </aside>
+    
+   
+    <main >
+        <nav>
+       <div class="container">
+       <div class="text-nav">
+        <h1>library management system</h1>
+        <p>manage tour book easily</p></div>
+        <button class="menu-button" id="menuButton"><i class="fa-solid fa-bars"></i></button>
+
+        </div>
+        </nav>
+        <section class="box container">
+            <input id="searchInput" type="search" placeholder="search by title or author..."> 
+             <select id="categoryFilter"> </select>
+            <div class="stat-books one">
+                <i class="fa-solid fa-box"></i>
+                <h3>Total Books</h3>
+                <p id="totalBooks">0</p>
+            </div>
+            <div class="stat-books two">
+                <h3>Available Books</h3>
+                <p id="availableBooks">0</p>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="overlay" id="overlay"  ></div>
+            <form class="addBook" id="addBook"  >
+                <div class="container-groups">
+                         <div class="group">
+                  <label>Select Book Image</label>
+                  <input type="file" name="" id="bookImage" accept="image/*" required>
+                </div>
+                <div class="group">
+                 <label>Enter Book Title</label>
+                 <input type="text" name="" id="titleBook" required>
+                </div>
+                <div class="group">
+                    <label>Enter Book Author</label>
+                    <input type="text" name="" id="authorBook" required>
+                </div>
+                <div class="group">
+                    <label>Enter Book Category</label>
+                    <input type="text" name="" id="categoryBook" required>
+                </div>
+                <div class="group">
+                    <label>Enter Refernce Book </label>
+                    <input type="text" name="" id="refernceBook" >
+                </div>
+                <div class="group">
+                    <label>Select Book Availabilty</label>
+                   <input type="checkbox" name="" id="availableBook">
+                </div>
+                </div>
+                <div class="btn">
+                    <button class="add" type="submit">Add</button>
+                    <button class="cancel" id="cancelButton">cancel</button>
+                </div>
+            </form>
+            <div class="container books-grid" id="booksGrid" ></div>
+        </section>
+    </main>
+    </div>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/js/all.min.js" integrity="sha512-2+f4MxT8KwN4tUzw6/hv9kxKiix603S9kmBcix+0y0dBhd6zdaPOV1Thf1DM886pFZG+cAtmshBi8UBpo6m3JA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+</body>
+</html>
